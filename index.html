@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Olivier LE RICHE – BUT MMI & Montage</title>
+  <meta name="description" content="Portfolio d'Olivier LE RICHE, étudiant en BUT MMI à l’IUT de Lens spécialisé dans le montage et la post-production audiovisuelle.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  
+  <!-- Fonts: Plus Jakarta Sans & Supreme -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=supreme@400,500,600,700,800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER / NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="#hero" class="logo">
+        <span class="logo-dot"></span>
+        <span>Olivier LE RICHE<span style="color: var(--primary);">.</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Accueil</a></li>
+        <li><a href="#projets" class="nav-link">Projets & Réalisations</a></li>
+        <li><a href="#competences" class="nav-link">Compétences</a></li>
+        <li><a href="#a-propos" class="nav-link">À Propos</a></li>
+        <li><a href="#contact" class="nav-cta">Me Contacter</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-grid">
+        
+        <div class="hero-text-content">
+          <div class="badge">
+            <span class="badge-pulse"></span>
+            <span>Disponible pour nouveaux projets</span>
+          </div>
+
+          <h1 class="hero-title">
+            Portfolio<span style="color: var(--primary);">.</span>
+          </h1>
+
+          <p class="hero-description">
+            Je m’appelle <strong class="text-orange">Olivier LE RICHE</strong>, étudiant en <strong class="text-orange">BUT MMI à l’IUT de Lens</strong>. Passionné par la création audiovisuelle, je me spécialise dans le <strong class="text-orange">montage</strong> et la <strong class="text-orange">post-production</strong>. À travers ce portfolio, je partage mes réalisations et ma vision du travail d’image.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projets" class="btn btn-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Explorer mes vidéos
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Discuter d'un projet
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Showcase Card -->
+        <div class="hero-showcase">
+          <div class="hero-card">
+            <div class="showcase-video-wrapper">
+              <img src="posters/Onion_finish.png" alt="Court-Métrage – Onion">
+              <div class="showcase-overlay">
+                <span class="showcase-tag">À la une</span>
+                <div class="showcase-bottom">
+                  <div class="showcase-info">
+                    <h4>Court-Métrage – Onion</h4>
+                    <p>Court-Métrage de Fiction</p>
+                  </div>
+                  <button class="play-circle-btn" 
+                          data-video-src="https://www.youtube-nocookie.com/embed/xmbsCcIaFPU?si=T4q8B1m7SyIMKLXw"
+                          data-title="Court-Métrage – Onion"
+                          data-desc="Court-métrage réalisé en équipe de 8 étudiants : écriture, découpage technique, tournage, montage et motion design."
+                          data-category="Fiction"
+                          title="Lancer la vidéo">
+                    <svg viewBox="0 0 24 24">
+                      <polygon points="6 4 20 12 6 20 6 4"></polygon>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ==========================================================================
+         GALERIE VIDÉOS / PROJETS
+         ========================================================================== -->
+    <section class="section" id="projets">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">Portfolio Vidéo</span>
+          <h2 class="section-title">Mes Réalisations Récentes</h2>
+          <p class="section-desc">
+            Cliquez sur un projet pour lancer la vidéo dans le lecteur immersif ou filtrez selon le genre désiré.
+          </p>
+        </div>
+
+        <!-- Filtres -->
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">Tous les projets</button>
+          <button class="filter-btn" data-filter="fiction">Fiction & Cinéma</button>
+          <button class="filter-btn" data-filter="pub">Publicités & Clips</button>
+          <button class="filter-btn" data-filter="interview">Interviews & Docu</button>
+          <button class="filter-btn" data-filter="social">Formats Courts & Réseaux</button>
+          <button class="filter-btn" data-filter="event">Projets MMI & Études</button>
+        </div>
+
+        <!-- Grille des Projets (13 Réalisations) -->
+        <div class="projects-grid">
+          
+          <!-- Projet 1 : Court métrage -->
+          <div class="project-card" data-category="fiction">
+            <div class="project-thumbnail" 
+                 data-video-src="https://www.youtube-nocookie.com/embed/em9hpDNL9Jk?si=ViMlsKt-JFgr2-y1"
+                 data-title="Court-Métrage de Fiction"
+                 data-desc="Post-production complète du court-métrage : dérushage, cut, habillage, sound design et colorimétrie."
+                 data-category="Fiction">
+              <img src="posters/metrage.png" alt="Court-Métrage de Fiction" loading="lazy">
+              <span class="project-badge-top badge-fiction">Fiction</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Court-Métrage de Fiction</h3>
+              <p class="project-description">
+                Post-production complète du projet : dérushage, montage cut, habillage graphique, sound design et colorimétrie.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">Montage & Cut</span>
+                  <span class="tag-pill">Sound Design</span>
+                  <span class="tag-pill">Colorimétrie</span>
+                  <span class="tag-pill">Habillage</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="https://www.youtube-nocookie.com/embed/em9hpDNL9Jk?si=ViMlsKt-JFgr2-y1"
+                   data-title="Court-Métrage de Fiction"
+                   data-desc="Post-production complète du court-métrage : dérushage, cut, habillage, sound design et colorimétrie."
+                   data-category="Fiction">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 2 : Clip Ready To Die -->
+          <div class="project-card" data-category="pub">
+            <div class="project-thumbnail" 
+                 data-video-src="https://www.youtube-nocookie.com/embed/Jije8kinxM0?si=BxMgJcyMyPPa_J4k"
+                 data-title="Clip – Ready To Die"
+                 data-desc="Conception et réalisation globale : découpage technique, repérage des lieux, captation vidéo et montage rythmé."
+                 data-category="Clip & Musique">
+              <img src="posters/Clip Ready To Die.jpg" alt="Clip – Ready To Die" loading="lazy">
+              <span class="project-badge-top badge-pub">Clip Musical</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Clip – Ready To Die</h3>
+              <p class="project-description">
+                Conception et réalisation globale : découpage technique, repérage des lieux, captation vidéo et montage rythmé.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">Découpage technique</span>
+                  <span class="tag-pill">Tournage & Captation</span>
+                  <span class="tag-pill">Montage</span>
+                  <span class="tag-pill">Clip</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="https://www.youtube-nocookie.com/embed/Jije8kinxM0?si=BxMgJcyMyPPa_J4k"
+                   data-title="Clip – Ready To Die"
+                   data-desc="Conception et réalisation globale : découpage technique, repérage des lieux, captation vidéo et montage rythmé."
+                   data-category="Clip & Musique">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 3 : Parodie MAIF -->
+          <div class="project-card" data-category="pub">
+            <div class="project-thumbnail" 
+                 data-video-src="https://www.youtube-nocookie.com/embed/sE-mp_m6ivo?si=ChOe_0nD18MsBbGf"
+                 data-title="Parodie Publicitaire MAIF"
+                 data-desc="Projet parodique détournant les codes de la publicité MAIF : jeu d'acteurs, cadrage humoristique et post-production rythmée."
+                 data-category="Publicité & Parodie">
+              <img src="posters/BACQUET_LE RICHE_ParodieMAIF.png" alt="Parodie Publicitaire MAIF" loading="lazy">
+              <span class="project-badge-top badge-pub">Parodie & Pub</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Parodie Publicitaire MAIF</h3>
+              <p class="project-description">
+                Réalisation en binôme : détournement satirique, mise en scène comique et habillage graphique inspiré de la publicité originale.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">Parodie</span>
+                  <span class="tag-pill">Pub</span>
+                  <span class="tag-pill">Humour</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="https://www.youtube-nocookie.com/embed/sE-mp_m6ivo?si=ChOe_0nD18MsBbGf"
+                   data-title="Parodie Publicitaire MAIF"
+                   data-desc="Projet parodique détournant les codes de la publicité MAIF : jeu d'acteurs, cadrage humoristique et post-production rythmée."
+                   data-category="Publicité & Parodie">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 4 : Fausse Publicité WebTV -->
+          <div class="project-card" data-category="pub">
+            <div class="project-thumbnail" 
+                 data-video-src="https://www.youtube-nocookie.com/embed/inxfLeGU3C8?si=J20Lk4ZxUFyTfuY4"
+                 data-title="Fausse Publicité – WebTV"
+                 data-desc="Fausse publicité créée pour une WebTV, utilisant le BDE comme marque pour un produit fictif : écriture, découpage technique, captation et montage."
+                 data-category="Publicité">
+              <img src="posters/PUB.png" alt="Fausse Publicité – WebTV" loading="lazy">
+              <span class="project-badge-top badge-pub">Fausse Pub</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Fausse Publicité – WebTV</h3>
+              <p class="project-description">
+                Fausse publicité créée pour une WebTV, utilisant le BDE de la fac comme marque pour promouvoir un produit fictif : écriture, découpage technique, captation vidéo et montage.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">Écriture</span>
+                  <span class="tag-pill">Découpage technique</span>
+                  <span class="tag-pill">Captation</span>
+                  <span class="tag-pill">Montage</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="https://www.youtube-nocookie.com/embed/inxfLeGU3C8?si=J20Lk4ZxUFyTfuY4"
+                   data-title="Fausse Publicité – WebTV"
+                   data-desc="Fausse publicité créée pour une WebTV, utilisant le BDE comme marque pour un produit fictif : écriture, découpage technique, captation et montage."
+                   data-category="Publicité">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 5 : Tracking VFX -->
+          <div class="project-card" data-category="pub">
+            <div class="project-thumbnail" 
+                 data-video-src="https://www.youtube-nocookie.com/embed/5nC7fwBsxkk?si=3lXvR4ZMtq0ucnmG"
+                 data-title="Motion Tracking – Lieux de Lens"
+                 data-desc="Exercice de suivi de mouvement (tracking) et incrustation sur des lieux notables de la ville de Lens sous After Effects."
+                 data-category="Motion Design">
+              <img src="posters/Tracking.jpg" alt="Motion Tracking – Lieux de Lens" loading="lazy">
+              <span class="project-badge-top badge-pub">Tracking</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Motion Tracking – Lieux de Lens</h3>
+              <p class="project-description">
+                Suivi de mouvement (tracking vidéo) et incrustation d'éléments sur des plans de lieux notables de Lens réalisé sous After Effects.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">After Effects</span>
+                  <span class="tag-pill">Tracking</span>
+                  <span class="tag-pill">Incrustation</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="https://www.youtube-nocookie.com/embed/5nC7fwBsxkk?si=3lXvR4ZMtq0ucnmG"
+                   data-title="Motion Tracking – Lieux de Lens"
+                   data-desc="Exercice de suivi de mouvement (tracking) et incrustation sur des lieux notables de la ville de Lens sous After Effects."
+                   data-category="Motion Design">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 6 : Interview principale -->
+          <div class="project-card" data-category="interview">
+            <div class="project-thumbnail" 
+                 data-video-src="https://www.youtube-nocookie.com/embed/d-HnyEc6A98?si=Du64hNUYmztNbJsO"
+                 data-title="Interview d'un Enseignant"
+                 data-desc="Interview d'un professeur de l'université : réalisation de la captation vidéo et du montage."
+                 data-category="Interview">
+              <img src="posters/Interview.jpg" alt="Interview d'un Enseignant" loading="lazy">
+              <span class="project-badge-top badge-interview">Interview</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Interview d'un Enseignant</h3>
+              <p class="project-description">
+                Interview d'un professeur de l'université : réalisation de la captation vidéo et sonore, puis montage dynamique avec plans de coupe.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">Interview</span>
+                  <span class="tag-pill">Captation</span>
+                  <span class="tag-pill">Prise de son</span>
+                  <span class="tag-pill">Montage</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="https://www.youtube-nocookie.com/embed/d-HnyEc6A98?si=Du64hNUYmztNbJsO"
+                   data-title="Interview d'un Enseignant"
+                   data-desc="Interview d'un professeur de l'université : réalisation de la captation vidéo et du montage."
+                   data-category="Interview">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 7 : RenduFinalenFR.mp4 (Fausses Interviews Gaming) -->
+          <div class="project-card" data-category="interview">
+            <div class="project-thumbnail" 
+                 data-video-src="https://www.youtube-nocookie.com/embed/ZSvwpDMmIV0?si=XVca4vCkGdOIIfEO"
+                 data-title="Fausses Interviews – Convention Gaming"
+                 data-desc="Fausses interviews pour une convention fictive de jeux vidéo : tournage en studio sur fond vert, travail de la lumière, captation et montage."
+                 data-category="Interview">
+              <img src="posters/RenduFinalenFR.jpg" alt="Fausses Interviews – Convention Gaming" loading="lazy">
+              <span class="project-badge-top badge-interview">Interview Fiction</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Fausses Interviews – Convention Gaming</h3>
+              <p class="project-description">
+                Série de fausses interviews pour une convention fictive de jeux vidéo : installation d'un studio sur fond vert, gestion de la lumière, captation et montage.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">Fond vert</span>
+                  <span class="tag-pill">Studio & Éclairage</span>
+                  <span class="tag-pill">Captation</span>
+                  <span class="tag-pill">Montage</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="https://www.youtube-nocookie.com/embed/ZSvwpDMmIV0?si=XVca4vCkGdOIIfEO"
+                   data-title="Fausses Interviews – Convention Gaming"
+                   data-desc="Fausses interviews pour une convention fictive de jeux vidéo : tournage en studio sur fond vert, travail de la lumière, captation et montage."
+                   data-category="Interview">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 8 : RendufinalTiktok.mp4 (Teaser Vertical Gaming) -->
+          <div class="project-card" data-category="social">
+            <div class="project-thumbnail" 
+                 data-video-src="Rendufinaltiktok.mp4"
+                 data-title="Teaser Vertical – Convention Gaming"
+                 data-desc="Format vertical destiné aux réseaux sociaux pour promouvoir la fausse convention de jeux vidéo : montage et habillage graphique."
+                 data-category="Réseaux Sociaux">
+              <img src="posters/RendufinalTiktok.jpg" alt="Teaser Vertical – Convention Gaming" loading="lazy">
+              <span class="project-badge-top badge-social">Format 9:16</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Teaser Vertical – Convention Gaming</h3>
+              <p class="project-description">
+                Format vertical (9:16) destiné aux réseaux sociaux pour promouvoir la fausse convention de jeux vidéo : réalisation du montage et habillage graphique.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">Format 9:16</span>
+                  <span class="tag-pill">Montage</span>
+                  <span class="tag-pill">Habillage graphique</span>
+                  <span class="tag-pill">Réseaux Sociaux</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="Rendufinaltiktok.mp4"
+                   data-title="Teaser Vertical – Convention Gaming"
+                   data-desc="Format vertical destiné aux réseaux sociaux pour promouvoir la fausse convention de jeux vidéo : montage et habillage graphique."
+                   data-category="Réseaux Sociaux">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 9 : DIscord.mp4 (Animation Logo Discord) -->
+          <div class="project-card" data-category="social">
+            <div class="project-thumbnail" 
+                 data-video-src="https://www.youtube-nocookie.com/embed/CZYAJomGZOQ?si=cv0knr5PsElMkImd"
+                 data-title="Animation Logo Discord"
+                 data-desc="Reproduction de l'animation officielle du logo Discord réalisée sous After Effects."
+                 data-category="Motion Design">
+              <img src="posters/DIscord.jpg" alt="Animation Logo Discord" loading="lazy">
+              <span class="project-badge-top badge-social">Motion Design</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Animation Logo Discord</h3>
+              <p class="project-description">
+                Exercice de motion design sous After Effects : reproduction à l'identique de l'animation officielle du logo Discord (gestion des courbes et keyframing).
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">After Effects</span>
+                  <span class="tag-pill">Motion Design</span>
+                  <span class="tag-pill">Animation 2D</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="https://www.youtube-nocookie.com/embed/CZYAJomGZOQ?si=cv0knr5PsElMkImd"
+                   data-title="Animation Logo Discord"
+                   data-desc="Reproduction de l'animation officielle du logo Discord réalisée sous After Effects."
+                   data-category="Motion Design">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 10 : Onion_finish.mp4 (Court-Métrage Onion) -->
+          <div class="project-card" data-category="fiction">
+            <div class="project-thumbnail" 
+                 data-video-src="https://www.youtube-nocookie.com/embed/xmbsCcIaFPU?si=T4q8B1m7SyIMKLXw"
+                 data-title="Court-Métrage – Onion"
+                 data-desc="Court-métrage réalisé en équipe de 8 étudiants : écriture, découpage technique, tournage, montage et motion design."
+                 data-category="Fiction">
+              <img src="posters/Onion_finish.png" alt="Court-Métrage – Onion" loading="lazy">
+              <span class="project-badge-top badge-fiction">Court-Métrage</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Court-Métrage – Onion</h3>
+              <p class="project-description">
+                Court-métrage de fiction réalisé en équipe de 8 étudiants : écriture, découpage technique, repérage, casting, captation lumière/son, décor, montage et motion design.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">Court-Métrage</span>
+                  <span class="tag-pill">Tournage & Lumière</span>
+                  <span class="tag-pill">Montage</span>
+                  <span class="tag-pill">Motion Design</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="https://www.youtube-nocookie.com/embed/xmbsCcIaFPU?si=T4q8B1m7SyIMKLXw"
+                   data-title="Court-Métrage – Onion"
+                   data-desc="Court-métrage réalisé en équipe de 8 étudiants : écriture, découpage technique, tournage, montage et motion design."
+                   data-category="Fiction">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 11 : IUT.mp4 (Présentation IUT) -->
+          <div class="project-card" data-category="event">
+            <div class="project-thumbnail" 
+                 data-video-src="https://www.youtube-nocookie.com/embed/yszGg38DnpY?si=dGGnPEuB0nO-e3jD"
+                 data-title="Présentation de l'IUT de Lens"
+                 data-desc="Vidéo de présentation de l'IUT de Lens : captation vidéo sur le campus, montage et habillage graphique."
+                 data-category="Projets MMI & Études">
+              <img src="posters/IUT.png" alt="Présentation de l'IUT de Lens" loading="lazy">
+              <span class="project-badge-top badge-event">Présentation</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Présentation de l'IUT de Lens</h3>
+              <p class="project-description">
+                Vidéo de présentation de l'IUT de Lens : réalisation de la captation vidéo sur le campus, montage et habillage graphique.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">Captation vidéo</span>
+                  <span class="tag-pill">Montage</span>
+                  <span class="tag-pill">Habillage graphique</span>
+                  <span class="tag-pill">IUT de Lens</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="https://www.youtube-nocookie.com/embed/yszGg38DnpY?si=dGGnPEuB0nO-e3jD"
+                   data-title="Présentation de l'IUT de Lens"
+                   data-desc="Vidéo de présentation de l'IUT de Lens : captation vidéo sur le campus, montage et habillage graphique."
+                   data-category="Projets MMI & Études">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 12 : groupe-5.mp4 (Fausses Interviews Musique 48h) -->
+          <div class="project-card" data-category="event">
+            <div class="project-thumbnail" 
+                 data-video-src="https://www.youtube-nocookie.com/embed/mPOTWzRHtu8?si=hFDf-2tGB4LOw03F"
+                 data-title="Fausses Interviews – Défi 48h"
+                 data-desc="Fausses interviews autour du thème de la musique : projet écrit, tourné et monté en 48h chrono."
+                 data-category="Projets MMI & Études">
+              <img src="posters/groupe-5.jpg" alt="Fausses Interviews – Défi 48h" loading="lazy">
+              <span class="project-badge-top badge-event">Défi 48h</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Fausses Interviews – Défi 48h</h3>
+              <p class="project-description">
+                Fausses interviews autour du thème de la musique : projet écrit, tourné et monté en 48h chrono.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">Défi 48h</span>
+                  <span class="tag-pill">Interview Fiction</span>
+                  <span class="tag-pill">Tournage</span>
+                  <span class="tag-pill">Montage</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="https://www.youtube-nocookie.com/embed/mPOTWzRHtu8?si=hFDf-2tGB4LOw03F"
+                   data-title="Fausses Interviews – Défi 48h"
+                   data-desc="Fausses interviews autour du thème de la musique : projet écrit, tourné et monté en 48h chrono."
+                   data-category="Projets MMI & Études">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 13 : Bacquet_Marion_Le_Riche_Olivier.mp4 (Parodie Teen Titans Go) -->
+          <div class="project-card" data-category="event">
+            <div class="project-thumbnail" 
+                 data-video-src="https://www.youtube-nocookie.com/embed/jm7cD_z_J20?si=Sr9MwdV4CO41tsd8"
+                 data-title="Parodie Animée – Teen Titans Go!"
+                 data-desc="Parodie animée de Teen Titans Go! : écriture, détourage des personnages, création des décors, animation 2D et montage."
+                 data-category="Animation & Parodie">
+              <img src="posters/Bacquet_Marion_Le_Riche_Olivier.png" alt="Parodie Animée – Teen Titans Go!" loading="lazy">
+              <span class="project-badge-top badge-event">Animation 2D</span>
+              <div class="project-hover-overlay">
+                <div class="card-play-btn">
+                  <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Parodie Animée – Teen Titans Go!</h3>
+              <p class="project-description">
+                Parodie animée de Teen Titans Go! : écriture du script, détourage des personnages, création des décors, animation 2D et montage.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="tag-pill">Animation 2D</span>
+                  <span class="tag-pill">After Effects</span>
+                  <span class="tag-pill">Détourage & Décor</span>
+                  <span class="tag-pill">Montage</span>
+                </div>
+                <a href="#" class="project-watch-link" 
+                   data-video-src="https://www.youtube-nocookie.com/embed/jm7cD_z_J20?si=Sr9MwdV4CO41tsd8"
+                   data-title="Parodie Animée – Teen Titans Go!"
+                   data-desc="Parodie animée de Teen Titans Go! : écriture, détourage des personnages, création des décors, animation 2D et montage."
+                   data-category="Animation & Parodie">
+                  Regarder &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         COMPÉTENCES & OUTILS
+         ========================================================================== -->
+    <section class="section skills-section" id="competences">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">Savoir-faire Technique</span>
+          <h2 class="section-title">Compétences & Outils</h2>
+          <p class="section-desc">
+            De l'organisation des rushs jusqu'à l'export final, principalement articulé autour de la suite Adobe Creative Cloud.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                <line x1="7" y1="2" x2="7" y2="22"></line>
+                <line x1="17" y1="2" x2="17" y2="22"></line>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <line x1="2" y1="7" x2="7" y2="7"></line>
+                <line x1="2" y1="17" x2="7" y2="17"></line>
+                <line x1="17" y1="17" x2="22" y2="17"></line>
+                <line x1="17" y1="7" x2="22" y2="7"></line>
+              </svg>
+            </div>
+            <h3 class="skill-title">Montage & Dérushage</h3>
+            <p class="skill-desc">
+              Tri et organisation des rushs, découpage précis, travail sur le rythme et les raccords pour assurer la cohérence de la vidéo.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Adobe Premiere Pro</span>
+              <span class="skill-tag">Media Encoder</span>
+              <span class="skill-tag">Dérushage & Raccords</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10"></path>
+                <path d="M12 2v20"></path>
+              </svg>
+            </div>
+            <h3 class="skill-title">Étalonnage & Colorimétrie</h3>
+            <p class="skill-desc">
+              Ajustement de l'exposition et de la balance des blancs, harmonisation des plans et application de LUTs avec les outils Lumetri.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Lumetri Color</span>
+              <span class="skill-tag">Harmonisation des plans</span>
+              <span class="skill-tag">Scopes & Histogrammes</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+            </div>
+            <h3 class="skill-title">Audio & Sound Design</h3>
+            <p class="skill-desc">
+              Nettoyage des prises de voix, équilibrage des niveaux sonores, calage de la musique et intégration de bruitages.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Adobe Audition</span>
+              <span class="skill-tag">Mixage Premiere Pro</span>
+              <span class="skill-tag">Habillage sonore</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="skill-title">Motion Design & Habillage</h3>
+            <p class="skill-desc">
+              Création d'animations de titres, bandeaux d'interviews, incrustations graphiques et sous-titres adaptés aux différents formats.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Adobe After Effects</span>
+              <span class="skill-tag">Adobe Photoshop</span>
+              <span class="skill-tag">Adobe Illustrator</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         À PROPOS
+         ========================================================================== -->
+    <section class="section" id="a-propos">
+      <div class="container about-grid">
+        
+        <div class="about-image-wrapper">
+          <div class="about-frame">
+            <img src="IMG_4578.jpg" alt="Olivier LE RICHE" class="about-photo">
+          </div>
+
+          <div class="about-floating-badge">
+            <div class="floating-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="floating-text">
+              <h5>Étudiant BUT MMI</h5>
+              <p>IUT de Lens</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-subtitle">À Propos</span>
+          <h2>Olivier LE RICHE</h2>
+          
+          <p>
+            Étudiant en <strong>BUT MMI à l’IUT de Lens</strong>, je me spécialise dans la création audiovisuelle avec un attrait tout particulier pour le <strong>montage</strong> et la <strong>post-production</strong>. J'aime expérimenter avec l'image, explorer différents formats et construire des vidéos dynamiques et rythmées.
+          </p>
+          <p>
+            Au quotidien, mes principaux centres d'intérêt sont le <strong>sport</strong>, la <strong>musique</strong>, les <strong>jeux vidéo</strong> et les <strong>mangas</strong>. Ces passions nourrissent directement ma façon de travailler : le sens du tempo et du rythme apporté par la musique, le dynamisme et l'esthétique visuelle tirés des mangas et du jeu vidéo, ainsi que l'énergie et l'esprit d'équipe développés à travers le sport.
+          </p>
+          <p>
+            Curieux et toujours motivé par de nouveaux défis créatifs, je cherche constamment à perfectionner mes compétences et à collaborer sur des projets enrichissants.
+          </p>
+
+          <div class="about-actions" style="margin-top: 1.8rem;">
+            <a href="CV_Olivier_LE_RICHE.pdf" class="btn btn-primary" download="CV_Olivier_LE_RICHE.pdf" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Télécharger mon CV
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION CONTACT
+         ========================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="contact-card-main">
+          
+          <div class="contact-info">
+            <span class="section-subtitle">Me Contacter</span>
+            <h3>Prêt à concrétiser votre prochain projet vidéo ?</h3>
+            <p>
+              Vous avez un tournage à organiser, des rushs à monter ou une série de vidéos à produire pour vos réseaux ? Écrivez-moi pour en discuter !
+            </p>
+
+            <div class="contact-links-list">
+              <a href="mailto:olivier.leriche13@gmail.com" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-link-meta">
+                  <h6>Email Direct</h6>
+                  <span>olivier.leriche13@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/olivier-le-riche-616154314/" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="contact-link-meta">
+                  <h6>LinkedIn</h6>
+                  <span>Olivier LE RICHE</span>
+                </div>
+              </a>
+
+              <a href="https://www.instagram.com/olivier.lrh/" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div class="contact-link-meta">
+                  <h6>Instagram</h6>
+                  <span>@olivier.lrh</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Formulaire (Envoi 100% direct via le site sans ouvrir de logiciel externe) -->
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Votre Nom ou Entreprise</label>
+              <input type="text" id="name" name="nom" class="form-input" placeholder="Ex. Jean Dupont" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Adresse Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="jean@exemple.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="type" class="form-label">Type de Projet</label>
+              <input type="text" id="type" name="type_de_projet" class="form-input" placeholder="Ex. Montage de vidéos TikTok / Court-Métrage / Aftermovie">
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Détails de votre demande</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Décrivez brièvement vos attentes, vos délais ou vos idées..." required></textarea>
+            </div>
+
+            <div class="form-success-message" id="formSuccess"></div>
+
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start; margin-top: 0.5rem;">
+              Envoyer le message
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       LECTEUR VIDÉO MODAL / LIGHTBOX
+       ========================================================================== -->
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Lecteur vidéo">
+    <div class="modal-content-wrapper">
+      <button class="modal-close-btn" id="modalClose" aria-label="Fermer le lecteur">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-player-container">
+        <video id="modalVideo" controls playsinline style="display: none;"></video>
+        <iframe id="modalIframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: none;"></iframe>
+      </div>
+
+      <div id="modalLocalAlert" class="modal-local-alert" style="display: none;">
+        <span class="modal-local-alert-icon">⚠️</span>
+        <div class="modal-local-alert-text">
+          <strong>Mode fichier local détecté (Erreur 153 YouTube) :</strong><br>
+          YouTube bloque la lecture intégrée lorsque le site est ouvert directement en double-cliquant sur <code>index.html</code> (<em>file:///</em>).<br>
+          👉 <strong>Pour voir les vidéos sur le site :</strong> lancez <code>lancer-site.bat</code> (qui démarre <em>http://localhost:8000</em>). Ou cliquez sur <strong>"Voir sur YouTube"</strong> ci-dessous.
+        </div>
+      </div>
+
+      <div class="modal-details">
+        <div class="modal-text">
+          <h3 id="modalTitle">Titre du Projet</h3>
+          <p id="modalDesc">Description complète du projet vidéo.</p>
+        </div>
+        <div class="modal-meta">
+          <span class="modal-category-tag" id="modalCategory">Catégorie</span>
+          <a id="modalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="modal-ext-link" style="display: none;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            <span>Voir sur YouTube</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        &copy; 2026 Olivier LE RICHE. Tous droits réservés.
+      </div>
+
+      <div class="footer-socials">
+        <a href="mailto:olivier.leriche13@gmail.com" class="social-icon-link" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/olivier.lrh/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/olivier-le-riche-616154314/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+
+      <a href="#hero" class="back-to-top-btn" id="backToTop">
+        Haut de page &uarr;
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
